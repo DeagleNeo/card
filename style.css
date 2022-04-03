@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 5.33333333vw;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+
+p{
+  text-align: center;
+}
+body {
+  background-color: #eff0f4;
+}
+.outer {
+  margin: 0 auto;
+}
+.top-bar {
+  height: auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.list-head {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-head h2 {
+  font-size: 0.825rem;
+  color: #24253d;
+  font-weight: normal;
+  border-left: 3px solid #3a84ff;
+  padding-left: 0.5em;
+}
+.list-head a {
+  color: black;
+  font-size: 0.4rem;
+  border: 5px outset grey;
+  border-radius: 5%;
+  margin-right:1.5em;
+}
+.list-head a:hover{
+  border:5px inset grey;
+}
+.list-item {
+  /* display:inline-block; */
+  /* width: auto; */
+  /* min-width:max-content; */
+  /* height: auto; */
+  /* display:inline-block; */
+  background-color: white;
+  margin:0 15px;
+  /* padding-bottom: 0; */
+  border-radius: 0.2rem;
+  /* flex-shrink:0; */
+  /* flex-grow:1; */
+  /* flex:0 1 100%; */
+  /* margin-right: 0.6rem; */
+  /* @media (min-width:1024px){
+    flex: 0 1 33.333333%;
+  }
+  @media (min-width:540px){
+    flex: 0 1 50%;
+  } */
+  /* flex:0 1 100%; */
+  /* display:block; */
+}
+
+.contain {
+  position: relative;
+  height: 100%;
+  width:fit-content;
+  display:inline-block;
+}
+
+.image-wrapper{
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  min-height: 216px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image{
+  display: block;
+  max-width: 100%;
+  width:100%;
+  border-radius: 5px;
+}
+
+.cover{
+  display:inline-block;
+  height:100%;
+}
+
+.f {
+  float:left;
+}
+/* .cover{
+  width:100%;
+} */
+
+.card-body{
+  padding:24px;
+  box-sizing: border-box;
+  position:relative;
+
+  /* height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.title {
+  color: #484848;
+  font-size: 0.6rem;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.33;
+  margin: 10px 0;
+}
+
+.description {
+  overflow: visible;
+  font-size: 0.35rem;
+  margin-bottom:0;
+  padding-bottom: 0;
+  /* white-space: nowrap; */
+}
+
+.list-content {
+  display: flex;
+  width: 16rem;
+  /* width:3454px; */
+  height:auto;
+  overflow-x: auto;
+  overflow-y:hidden;
+  margin:0 auto;
+}
+
+.like{
+  /* font-size: 50rem; */
+  position:absolute;
+  top: 17%;
+  right: 5%;
+  /* line-height:3; */
+  cursor:pointer;
+}
+
+.badge{
+  display:inline-block;
+  /* padding:5.6px 24px; */
+  padding: 0.06rem 0.24rem;
+  font-size:0.3rem;
+  font-weight:300;
+  letter-spacing:0.03rem;
+  line-height:1;
+  color:#fff;
+  text-align:center;
+  white-space:nowrap;
+  border-radius:4px;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top:8%;
+  right:6%;
+}
+.blue {
+  background-color: rgb(13,110,253);
+}
+.red {
+  background-color: rgb(220,53,69);
+}
+
+.title-lay-over {
+  font-size: 0.75rem;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+  line-height: 1.33;
+  margin: 0.15rem 0;
+  position:relative;
+  bottom:48%;
+  left:6%;
+  color:rgb(237,235,230);
+}
+
+.description-lay-over {
+  max-height: 72px;
+  overflow: visible;
+  font-size: 0.45rem;
+  font-family:'Open Sans', sans-serif;
+  letter-spacing: 0.01rem;
+  line-height: 1.33;
+  margin: 0.15rem 0;
+  position:relative;
+  bottom:48%;
+  left:6%;
+  color:rgb(237,235,230);
+}
+.ellipsis {
+  position:absolute;
+  bottom:10%;
+  right:6%;
+  color:rgb(237,235,230);
+  cursor:pointer;
+  z-index:1;
+}
+
+.card-body2{
+  position:relative;
+
+  /* height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.play{
+  position:absolute;
+  top: 40%;
+  left: 42%; 
+  cursor:pointer;
+  z-index:2;
+}
+
+.mask{
+  content:'';
+  background:rgba(255,255,255,0.75);
+  position:absolute;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1;
+}
+
+/* .box {} */
+
+/* .badge-right {
+  display:inline-block;
+  /* padding:5.6px 24px;
+  padding: 0.06rem 0.24rem;
+  font-size:0.3rem;
+  font-weight:300;
+  letter-spacing:0.03rem;
+  line-height:1;
+  color:#fff;
+  text-align:center;
+  white-space:nowrap;
+  border-radius:4px;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top:4%;
+  right:2%;
+} */

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="outer">
+        <header class="top-bar">
+            <div class="title">
+                <p>Card practice</p>
+            </div>
+        </header>
+
+        <div class="course-list">
+            <div class="list-head">
+                <h2>My Cards</h2>
+                <a href="javascript:;">More >></a>
+            </div>
+
+            <div class="list-content">
+                <div class="list-item">
+                    <div class="contain">
+                        <div class="image-wrapper">
+                            <img class = "card-image" src="./img/1.jpeg" alt="Some random text">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="title"> Title</h3>
+                            <div class="description"> Lorem ipsum dolor sit amet ieut.</div>
+                            <!-- <span class="like" ><i class="fa fa-heart fa-2xs"></i></span> -->
+                            <svg class = "like" width="10%" height="25%" viewBox="0 -2 30 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+                                <!-- <title>icon</title>
+                                <desc>Created with Sketch.</desc> -->
+                                <g id="Cards-UI" stroke="#808080" stroke-width="3" fill="none" fill-rule="evenodd">
+                                    <g id="ui-cards-alejandro-cuffia" transform="translate(-750.000000, -860.000000)" fill="none">
+                                        <g id="card12" transform="translate(470.000000, 830.000000)">
+                                            <path d="M281.22175,42.333 L294.5785,58.2945 C294.80875,58.56975 295.18525,58.566 295.4125,58.2945 L308.7685,42.333 L308.236,43.0155 C309.022,42.03225 309.58525,40.84725 309.8425,39.5445 C309.94525,39.02325 310,38.48325 310,37.9305 C310,33.55425 306.61075,30.006 302.4295,30.006 C298.98025,30.006 296.07025,32.421 295.1575,35.72325 L294.8425,35.71725 C293.929,32.41425 291.019,30 287.56975,30 C283.38925,30 280,33.5475 280,37.9245 C280,38.47725 280.054,39.0165 280.15675,39.53775 C280.414,40.8405 280.97725,42.02625 281.764,43.0095" id="icon"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="badge blue">SPAIN</span>
+                    </div>
+
+                </div>
+
+                <div class="list-item">
+                    <div class="contain">
+                        <span class="mask"></span>
+                        <img class="cover" src="./img/bg-5.png" alt="Some random text">
+                        <span class="badge red">ITALY</span>
+                        <h3 class="title-lay-over"> Title</h3>
+                        <div class="description-lay-over"> Florence, Italy</div>
+                        <div class="ellipsis">&#8230;</div>
+                        <!-- <div class="card-body2"> -->
+                            <svg class="play" width="16%" height="16%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+                                <title>Combined Shape</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="Cards-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="ui-cards-alejandro-cuffia" transform="translate(-615.000000, -195.000000)" fill="#FFFFFF">
+                                        <g id="card2" transform="translate(470.000000, 90.000000)">
+                                            <g id="Icon" transform="translate(145.000000, 105.000000)">
+                                                <path d="M50,25 C50,38.8065789 38.8065789,50 25,50 C11.1934211,50 0,38.8065789 0,25 C0,11.1934211 11.1934211,0 25,0 C38.8065789,0 50,11.1934211 50,25 Z M23.0660898,16.035288 C21.2273971,14.8094928 19.7368421,15.610725 19.7368421,17.8251822 L19.7368421,30.8590284 C19.7368421,33.0733548 21.2222775,33.8781308 23.0660898,32.6489226 L32.1970681,26.5616038 C34.0357608,25.3358086 34.0408804,23.351815 32.1970681,22.1226068 L23.0660898,16.035288 Z" id="Combined-Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    <div class="contain">
+
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    
+                </div>
+
+                <div class="list-item">
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <script>
+        window.onload = function(){
+            var strokes = document.querySelectorAll(".like>g");
+            // console.log(strokes[0].children[0].getAttribute('fill'))
+            for(let i of strokes){
+                i.onmouseenter = function(){
+                    this.style.cursor = "pointer";
+                    if(!this.keep){
+                        this.setAttribute('stroke','#ff0000');
+                        // this.setAttribute('stroke-width','1');   
+                        this.children[0].setAttribute('fill','#ff0000');
+                    }
+                }
+                i.onmouseleave = function(){
+                    if (!this.keep){
+                        this.setAttribute('stroke','#808080');
+                        this.children[0].setAttribute('fill','none');}
+                }
+                i.onclick = function(){
+                    if(!this.keep){
+                        this.setAttribute('stroke','#ff0000');
+                        this.children[0].setAttribute('fill','#ff0000');
+                        this.keep = 1;
+                    }else{
+                        this.setAttribute('stroke','#808080');
+                        this.children[0].setAttribute('fill','none');
+                        this.keep = 0;
+                    }
+                }
+                
+            }
+            var play = document.querySelector('.play');
+            var mask = document.querySelector('.mask');
+            play.onmouseenter = function(){
+                mask.style.background = "rgba(255,255,255,0)";
+            }
+            play.onmouseleave = function(){
+                if(!this.keep){
+                mask.style.background = "rgba(255,255,255,0.75)";}
+            }
+            play.onclick = function(){
+                this.style.visibility = "hidden";
+                this.keep = 1;
+                mask.style.background = "rgba(255,255,255,0)";
+            }
+            mask.onclick = function(){
+                if(play.style.visibility == "hidden"){
+                    play.style.visibility = "visible";
+                    mask.style.background = "rgba(255,255,255,0.75)";
+                    play.keep = 0;
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
